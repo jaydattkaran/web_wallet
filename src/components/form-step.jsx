@@ -12,7 +12,7 @@ const FormStep = ({ children, isHidden }) => {
 
     return (
         <form onSubmit={formSubmit} hidden={isHidden}>
-            <div className="mb-2 flex justify-center">Step {model.currentStep + 1} / {model.steps.length}</div>
+            <div className="mb-2 mt-4 flex justify-center text-neutral-400">Step {model.currentStep + 1} / {model.steps.length}</div>
             {children}
             {/* { !model.isFirstStep() && <button type="button" onClick={model.prevStep}>Previous</button>} */}
             {/* { <button type="submit">{ !model.isLastStep() ? 'Next' : 'Submit'}</button>} */}
